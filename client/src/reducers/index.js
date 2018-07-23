@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import DefaultReducer from './DefaultReducer';
+import SearchFieldReducers from './SearchFieldReducers';
 
 export default combineReducers({
-  default: DefaultReducer,
+  searchField: SearchFieldReducers,
 });

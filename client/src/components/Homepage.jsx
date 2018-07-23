@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from './Search';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <div>
-      
+        <Search />
       </div>
     );
   }
