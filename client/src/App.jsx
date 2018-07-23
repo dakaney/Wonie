@@ -1,4 +1,9 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxThunk from 'redux-thunk';
+import reducers from './reducers';
+import Homepage from './components/Homepage';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,10 +18,15 @@ class App extends React.Component {
   }
 
   render() {
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+
     return (
-      <div>
-        <h1>Hello, world!</h1>
-      </div>
+      <Provider store={store}>
+        <div>
+        <h1> Wonie </h1>
+        <Homepage />
+        </div>
+      </Provider>
     );
   }
 
