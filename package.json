@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dakaney/Wonie#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

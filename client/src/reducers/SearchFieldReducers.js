@@ -1,16 +1,16 @@
-import { UPDATE_SEARCH_FIELD } from '../actions/types';
+import { SEARCH_MOVIE } from '../actions/types';
 
 const INITIAL_STATE = {
   value: '',
+  searchedMovieList: [],
 };
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case UPDATE_SEARCH_FIELD:
+    case SEARCH_MOVIE:
       const newState = state;
 
-      newState.value += action.payload;
-      console.log('newState', newState)
+      newState.searchedMovieList = action.payload;
       return newState;
     default: 
       return state;

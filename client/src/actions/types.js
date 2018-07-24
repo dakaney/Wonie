@@ -1,2 +1,2 @@
-export const UPDATE_SEARCH_FIELD = 'update_search_field';
+export const SEARCH_MOVIE = 'search_movie';
 
